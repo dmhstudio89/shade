@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .step {
+            margin-bottom: 24px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            width: 28px;
+            height: 28px;
+            border-radius: 14px;
+            background-color: #5E5CE6;
+            /* Indigo to match AppColors.primary */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .step-description {
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .step-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .step-image img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                color: #fff;
+                background-color: #1a1a1a;
+            }
+
+            .step-description {
+                color: #bbb;
+            }
+        }
+
+        .tip {
+            background-color: rgba(94, 92, 230, 0.1);
+            /* Light indigo */
+            border-left: 4px solid #5E5CE6;
+            /* Indigo */
+            padding: 12px;
+            margin-top: 24px;
+            border-radius: 4px;
+        }
+
+        .tip-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #5E5CE6;
+            /* Indigo */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>How to Enable Shade</h1>
+
+    <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+            <div class="step-title">Open Safari</div>
+            <div class="step-description">Tap the Safari icon on your Home Screen to launch it.</div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+            <div class="step-title">Access Safari Settings</div>
+            <div class="step-description">Tap on the icon in the address bar (on the left side).</div>
+            <div class="step-image">
+                <img src="open_settings.png"
+                     alt="AA icon in Safari address bar">
+            </div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+            <div class="step-title">Manage Extensions</div>
+            <div class="step-description">Tap on "Manage Extensions" in the dropdown menu.</div>
+            <div class="step-image">
+                <img src="manage_extension.png"
+                     alt="Manage Extensions option in menu">
+            </div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+            <div class="step-title">Enable Shade</div>
+            <div class="step-description">Find "Shade" in the list and toggle the switch to ON position.</div>
+            <div class="step-image">
+                <img src="enable_toggle.png"
+                     alt="Shade extension toggle switch">
+            </div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+            <div class="step-title">Tap Shade</div>
+            <div class="step-description">Now tap Shade </div>
+            <div class="step-image">
+                <img src="tap_warning.png"
+                     alt="Shade extension toggle switch">
+            </div>
+        </div>
+    </div>
+
+    <div class="step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+            <div class="step-title">Allow Permissions</div>
+            <div class="step-description">If prompted, tap "Always Allow" and "Always Allow on Every Website" to give
+                Shade the necessary permissions.</div>
+            <div class="step-image">
+                <img src="always_allow.png"
+                     alt="Allow permissions dialog">
+            </div>
+            <div class="step-image">
+                <img src="every_website.png"
+                     alt="Allow every website dialog">
+            </div>
+        </div>
+    </div>
+
+    <div class="tip">
+        <div class="tip-title">Tip</div>
+        <div>After enabling the extension, you can customize its settings by tapping on the extension icon in Safari's
+            toolbar.</div>
+    </div>
+</body>
+
+</html>
